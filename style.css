@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 120px;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+#mese-corrente {
+    line-height: 70px;
+}
+
+#previous, #next {
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 3px;
+    background-color: darkblue;
+    color: white;
+}
+
+#previous:hover, #next:hover {
+    background-color: #eaeaea;
+    color: darkblue;
+}
+
+#previous {
+    margin-right: 30px;
+}
+
+#previous i {
+    padding-right: 10px;
+}
+
+#next i {
+    padding-left: 10px;
+}
+
+#calendario {
+    margin: 0 auto;
+    width: 200px;
+}

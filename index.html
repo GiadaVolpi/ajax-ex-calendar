@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Calendario</title>
+        <!-- meta per media query -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- link Fontaweson -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+        <!-- link x jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Link Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Caveat|PT+Sans:400,700&display=swap" rel="stylesheet">
+        <!-- script Handlebars -->
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <!-- script MOMENT -->
+        <script src="https://momentjs.com/downloads/moment.min.js"></script>
+        <!-- script italian Moment -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/it.js"></script>
+        <!-- script x jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- script x file Javascript -->
+        <script src="main.js" charset="utf-8"></script>
+        <!-- link al foglio di stile -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1><span id="mese-corrente"></span> 2018</h1>
+                <div class="scelta-mese">
+                    <button id="previous"><i class="fas fa-arrow-left"></i>Precedente</button>
+                    <button id="next">Successivo<i class="fas fa-arrow-right"></i></button>
+                </div>
+            </header>
+            <main>
+                <ul id="calendario">
+
+                </ul>
+            </main>
+        </div>
+
+
+
+
+        <script id="giorno-template" type="text/x-handlebars-template">
+            <li data-giorno="{{ standardDay }}">{{{ day }}}</li>
+        </script>
+
+
+    </body>
+</html>
